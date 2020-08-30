@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/txvOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="10dp"
+            android:text="&#8942;"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            />
+        <com.infinityandroid.roundedimageview.RoundedImageView
+            android:id="@+id/imvImage"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_no_image"
+            app:corner_radius="10"
+            />
+        <TextView
+            android:id="@+id/txvNameInc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imvImage"
+            android:layout_toStartOf="@+id/txvOptions"
+            tools:text="Nama Incident"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/imvImage"
+            android:layout_below="@+id/txvNameInc"
+            android:drawableLeft="@drawable/ic_location"
+            tools:text="Lokasi"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

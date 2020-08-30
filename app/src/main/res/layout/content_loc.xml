@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.loc.LocActivity"
+    tools:showIn="@layout/activity_loc"
+    android:background="@color/colorPrimary"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
